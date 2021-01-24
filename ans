@@ -1,0 +1,8 @@
+import pandas as pd
+data = pd.read_csv('boston.csv')
+print(data)
+
+boston_data = pd.read_csv('boston.csv',usecols=['CHAS','NOX','RM'])
+print(boston_data)
+
+boston_data.to_excel('new_boston_data.xlsx')
